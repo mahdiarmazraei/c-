@@ -1,0 +1,19 @@
+//arrays 2d and return larg number from arrays
+using System;
+using System.Linq;
+public class Program 
+{
+    public static double[] FindLargest(double[][] values) 
+    {
+        double[] maxNumbers = new double[values.Length];
+        
+        int i = 0;
+        foreach(double[] array in values)
+        {
+          maxNumbers[i] = array.Max();
+          i++;
+        }
+      
+        return maxNumbers;
+    }
+}
